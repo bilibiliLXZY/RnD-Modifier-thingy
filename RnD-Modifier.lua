@@ -128,7 +128,7 @@ buttonBackForMore.MouseButton1Click:Connect(function()
 		local charrrrrrrrr = playerGui
 		if charrrrrrrrr then
 			nahnahnah = charrrrrrrrr.ChildAdded:Connect(function(ch) 
-				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = math.random(4, 12) end
+				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = math.random(4, 7) end
 			end)
 		end
 		buttonBackForMore.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
@@ -209,6 +209,12 @@ buttonSilentA60.MouseButton1Click:Connect(function()
 			if child.Name == "Arrival" or child.Name == "Shake" then
 				task.wait()
 				child:Destroy()
+			end
+			if child.Name == "monster" then
+				local mamah = child:WaitForChild("Static", 3)
+				if mamah then
+					mamah:Destroy()
+				end
 			end
 		end)
 	else
