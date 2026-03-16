@@ -96,13 +96,15 @@ local function addTextButtonToScrollingFrame(name, color, text, position)
 end
 
 -- Area for Connections
+frameForButtonz.Visible = false
+textButtonExpand.Text = "<"
 textButtonExpand.MouseButton1Click:Connect(function()
 	if (frameForButtonz.Visible == false) then
 		frameForButtonz.Visible = true
-		textButtonExpand.Text = "<"
+		textButtonExpand.Text = ">"
 	elseif (frameForButtonz.Visible == true) then
 		frameForButtonz.Visible = false
-		textButtonExpand.Text = ">"
+		textButtonExpand.Text = "<"
 	end
 end)
 
