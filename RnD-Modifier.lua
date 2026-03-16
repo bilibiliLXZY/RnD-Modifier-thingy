@@ -231,7 +231,7 @@ buttonShellPrevLocker.MouseButton1Click:Connect(function()
 				end
 			end
 		end)
-		aiouebgaefbiieioains = playerGui.ChildAdded:Connect(function(child))
+		aiouebgaefbiieioains = playerGui.ChildAdded:Connect(function(child)
 			if child.Name == "animplay" and child.chara.Value == localPlayer.Character and child.seq.Value == "hidelocker" then
 				if shouldshell then
 					child.seq.Value = "jackjump"
