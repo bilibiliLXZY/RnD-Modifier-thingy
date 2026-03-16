@@ -218,28 +218,22 @@ buttonSilentA60.MouseButton1Click:Connect(function()
 end)
 local prevlocker;
 local shouldshell = false;
-local buttonShellPrevLocker = addTextButtonToScrollingFrame("WahShell", Color3.fromRGB(200, 200, 200), "New Roommate", UDim2.new(0, 0, 0.35, 105));
+local buttonShellPrevLocker = addTextButtonToScrollingFrame("PrimeHell", Color3.fromRGB(50, 0, 255), "Prime Hell", UDim2.new(0, 0, 0.35, 105));
 buttonShellPrevLocker.MouseButton1Click:Connect(function()
 	if buttonShellPrevLocker.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
 		buttonShellPrevLocker.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-		meowymeowmeowma = workspace.rooms.DescendantAdded:Connect(function(ch) 
-			if ch.Name == "Occupied" and ch.Value == localPlayer.Character then
-				if prevlocker == ch.Parent then
-					shouldshell = true
-				else
-					shouldshell = false
-				end
-			end
-		end)
-		aiouebgaefbiieioains = playerGui.ChildAdded:Connect(function(child)
-			if child.Name == "animplay" and child.chara.Value == localPlayer.Character and child.seq.Value == "hidelocker" then
-				if shouldshell then
-					child.seq.Value = "jackjump"
-				end
-			end
+		local monsterreturnflag = Instance.new("Folder")
+		monsterreturnflag.Parent = workspace
+		monsterreturnflag.Name = "monsterreturns"
+		meowymeowmeowma = monsterreturnflag:GetPropertyChangedSignal("Name"):Connect(function() 
+			monsterreturnflag.Name = "monsterreturns"
 		end)
 	else
 		if meowymeowmeowma then meowymeowmeowma:Disconnect(); meowymeowmeowma = nil end
+		local amamamamamamamamama = workspace:WaitForChild("monsterreturns", 3)
+		if amamamamamamamamama then
+			amamamamamamamamama:Destroy()
+		end
 		buttonShellPrevLocker.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 	end
 end)
