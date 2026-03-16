@@ -215,6 +215,7 @@ buttonSilentA60.MouseButton1Click:Connect(function()
 			if child.Name == "monster" then
 				local mamah = child:WaitForChild("Static", 3)
 				if mamah then
+					task.wait()
 					mamah:Destroy()
 				end
 			end
