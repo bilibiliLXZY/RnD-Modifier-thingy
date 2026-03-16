@@ -216,7 +216,7 @@ buttonSilentA60.MouseButton1Click:Connect(function()
 				local mamah = child:WaitForChild("Static", 3)
 				if mamah then
 					task.wait()
-					mamah:Destroy()
+					mamah.Playing = false
 				end
 			end
 		end)
