@@ -222,7 +222,7 @@ buttonSilentA60.MouseButton1Click:Connect(function()
 		end)
 	else
 		buttonSilentA60.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-		
+		if whatthemeow then whatthemeow:Disconnect(); whatthemeow = nil end
 	end
 end)
 local prevlocker;
