@@ -125,22 +125,23 @@ buttonRentsDue.MouseButton1Click:Connect(function()
 	end
 end)
 local buttonBackForMore = addTextButtonToScrollingFrame("MoreScribbleRebounds", Color3.fromRGB(225, 225, 225), "Back for More", UDim2.new(0, 0, 0.05, 15));
-buttonBackForMore.MouseButton1Click:Connect(function()
-	if buttonBackForMore.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
+local buttonAgainAgainAgain = addTextButtonToScrollingFrame("InfScribbleRebounds", Color3.fromRGB(225, 225, 225), "Again & Again & Again", UDim2.new(0, 0, 0.1, 30));
+local buttonBackForMorea = addTextButtonToScrollingFrame("NoScribbleRebounds", Color3.fromRGB(225, 225, 225), "Slothful Scribble", UDim2.new(0, 0, 0.25, 75));
+buttonBackForMorea.MouseButton1Click:Connect(function()
+	if buttonBackForMorea.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
 		local charrrrrrrrr = playerGui
 		if charrrrrrrrr then
-			nahnahnah = charrrrrrrrr.ChildAdded:Connect(function(ch) 
-				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = math.random(4, 7) end
+			nahnahnaha = charrrrrrrrr.ChildAdded:Connect(function(ch) 
+				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = 0 end
 			end)
 		end
-		buttonBackForMore.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-		
+		buttonBackForMorea.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+
 	else
-		buttonBackForMore.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-		if nahnahnah then nahnahnah:Disconnect(); nahnahnah = nil end
+		buttonBackForMorea.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		if nahnahnaha then nahnahnaha:Disconnect(); nahnahnaha = nil end
 	end
 end)
-local buttonAgainAgainAgain = addTextButtonToScrollingFrame("InfScribbleRebounds", Color3.fromRGB(225, 225, 225), "Again & Again & Again", UDim2.new(0, 0, 0.1, 30));
 buttonAgainAgainAgain.MouseButton1Click:Connect(function()
 	if buttonAgainAgainAgain.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
 		local charrrrrrrrr = playerGui
@@ -153,6 +154,20 @@ buttonAgainAgainAgain.MouseButton1Click:Connect(function()
 	else
 		buttonAgainAgainAgain.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 		if nahnahnahm then nahnahnahm:Disconnect(); nahnahnahm = nil end
+	end
+end)
+buttonBackForMore.MouseButton1Click:Connect(function()
+	if buttonBackForMore.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
+		local charrrrrrrrr = playerGui
+		if charrrrrrrrr then
+			nahnahnah = charrrrrrrrr.ChildAdded:Connect(function(ch) 
+				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = math.random(4, 7) end
+			end)
+		end
+		buttonBackForMore.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+	else
+		buttonBackForMore.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+		if nahnahnah then nahnahnah:Disconnect(); nahnahnah = nil end
 	end
 end)
 local buttonRentsPaid = addTextButtonToScrollingFrame("InfiniteDarkness", Color3.fromRGB(255, 175, 133), "Rent's Paid", UDim2.new(0, 0, 0.15, 45));
@@ -185,22 +200,6 @@ buttonPlaceBought.MouseButton1Click:Connect(function()
 	else
 		if meowymeowmeow then meowymeowmeow:Disconnect(); meowymeowmeow = nil end
 		buttonPlaceBought.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-	end
-end)
-local buttonBackForMorea = addTextButtonToScrollingFrame("NoScribbleRebounds", Color3.fromRGB(225, 225, 225), "Slothful Scribble", UDim2.new(0, 0, 0.25, 75));
-buttonBackForMorea.MouseButton1Click:Connect(function()
-	if buttonBackForMorea.BackgroundColor3 == Color3.fromRGB(25, 25, 25) then
-		local charrrrrrrrr = playerGui
-		if charrrrrrrrr then
-			nahnahnaha = charrrrrrrrr.ChildAdded:Connect(function(ch) 
-				if ch:IsA("LocalScript") and ch.Name == "localscribble" then ch.reb.Value = 0 end
-			end)
-		end
-		buttonBackForMorea.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
-
-	else
-		buttonBackForMorea.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-		if nahnahnaha then nahnahnaha:Disconnect(); nahnahnaha = nil end
 	end
 end)
 local buttonSilentA60 = addTextButtonToScrollingFrame("SilentA60", Color3.fromRGB(255, 100, 100), "I'm Tip-Toein' Here", UDim2.new(0, 0, 0.3, 90));
